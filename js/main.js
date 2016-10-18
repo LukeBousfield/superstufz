@@ -23,13 +23,16 @@ function pushStufz() {
 }
 
 function showGame(opts) {
+    console.log(opts);
     var url = "https://superstufz.com/games/" + opts.id;
-    $('#games').append('<div id="' + opts.id + '">');
-    var gameElem = $(opts.id);
-    gameElem.append("<h3>" + opts.title + "</h3>");
-    gameElem.append("<p>" + opts.desc + "</p>");
-    gameElem.append('<img src="' + opts.img + '" />');
+    $('#games').append('<div class="panel panel-body" id="' + opts.id + '">');
+    var gameElem = $('#' + opts.id);
+    console.log(gameElem);
+    gameElem.append("<h3 class='text-center'>" + opts.title + "</h3>");
+    gameElem.append("<p class='text-center'>" + opts.desc + "</p>");
+    gameElem.append('<img class="center-block thumbnail" src="' + opts.img + '" />');
     gameElem.click(function () {
-    location.href = 'https://superstufz.com/' + opts.id;
+        location.href = 'https://superstufz.com/' + opts.id;
     });
+    gameElem.append('<div class="divider"></div>');
 }
