@@ -32,7 +32,7 @@ function showGame(opts) {
     gameElem.append("<p class='text-center'>" + opts.desc + "</p>");
     gameElem.append('<img class="center-block thumbnail" src="' + opts.img + '" />');
     gameElem.click(function () {
-        location.href = 'https://superstufz.com/' + opts.id;
+        location.href = url
     });
     gameElem.append('<div class="divider"></div>');
 }
