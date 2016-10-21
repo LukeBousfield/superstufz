@@ -1,0 +1,46 @@
+{
+  "name": "tomatotime",
+  "version": "1.0.0",
+  "description": "A single-page React app.",
+  "main": "./source/index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js",
+    "watch": "npm run watch:js",
+    "build:js": "npm run clean:js && webpack",
+    "watch:js": "npm run build:js && webpack --watch",
+    "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenphan0/tomatotime.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Helen Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helenphan0/tomatotime/issues"
+  },
+  "homepage": "https://github.com/helenphan0/tomatotime#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}

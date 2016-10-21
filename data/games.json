@@ -1,8 +1,10 @@
 [
   {
-    "title": "Overstory",
-    "description": "A fan game of Undertale",
-    "img": "http://superstufz.com/img/thumbs/overstory.jpg",
-    "id": "overstory"
+    "title": "Tomato Time",
+    "description": "Test your knowledge on movies! Guess the Rotten Tomato rating and the runtime of 10 different movies. The more accurate your guess, the higher you score!",
+    "mobileFriendly": true,
+    "ageRating": 13,
+    "img": "http://superstufz.com/games/tomatotime/source/img/tomato.png",
+    "id": "tomatotime"
   }
 ]

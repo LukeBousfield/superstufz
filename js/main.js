@@ -4,6 +4,7 @@ $.getJSON('http://superstufz.com/data/games.json', onGet);
 
 function onGet(res) {
     stufz = res;
+    console.log(stufz);
     pushStufz();
 }
 
