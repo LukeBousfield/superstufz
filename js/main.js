@@ -1,4 +1,9 @@
 var stufz = [];
+var age = Lockr.get('age');
+
+if (age === null) {
+    // Ask for age
+}
 
 $.getJSON('http://superstufz.com/data/games.json', onGet);
 

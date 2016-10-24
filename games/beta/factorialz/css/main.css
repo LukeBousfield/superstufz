@@ -1,0 +1,12 @@
+input.input-sm {
+    width: 75px;
+}
+
+input.input-xm {
+    width: 50px;
+}
+
+label {
+    font-family: sans-serif;
+    font-weight: normal;
+}

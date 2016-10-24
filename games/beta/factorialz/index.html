@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorialz - SuperStufz</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <h1 class="text-center">Factorialz</h1>
+            <p class="text-center">Cross your Ts, dot your Is, and factor your Zs.</p>
+        </div>
+        <!-- Body -->
+        <div class="jumbotron text-center">
+            <form id="nums">
+                <label class="text-center" for="minNum">Allow roots from </label>
+                <input type="number" class="text-center" id="minNum" value="-10" />
+                to
+                <input type="number" class="text-center" id="maxNum" value="10" />
+                <input type="submit" class="text-center btn btn-primary form-control" id="applyChanges" value="Apply changes" />
+            </form>
+            <br />
+            <br />
+            <div class="checkbox-inline">
+                <label for="allowCos"><input id="allowCos" type="checkbox" />Allow coefficients of x^2</label>
+            </div>
+
+            <button class="pull-left btn btn-success" id="factor">Factoring</button>
+            <button class="pull-right btn btn-danger" id="expand">Expanding</button>
+
+            <div id="probswer">
+                <p id="problem"></p>
+                <form id="answerForm" class="form-group-sm">
+                    <label>Answer: (<input type="number" id="squareco1" class="input-sm input-xm" value="1" autofocus />x</label>
+                    <label id="op1" for="const1"> + </label>
+                    <input type="number" id="const1" class="input-sm" />
+                    <label>)(<input type="number" id="squareco2" class="input-sm input-xm" value="1" />x</label>
+                    <label id="op2" for="const2"> + </label>
+                    <input type="number" id="const2" class="input-sm" />
+                    )
+                    <input type="submit" class="btn btn-default" />
+                </form>
+            </div>
+
+        </div>
+
+        <div class="panel-footer">
+            <h3>Instructions</h3>
+            <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding (NOTE: not yet functional).  You can see your progress on both skills on the progress bar (NOTE: not yet functional).</p>
+        </div>
+        <!-- Scripts -->
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/chance/dist/chance.min.js"></script>
+        <script src="lib/algebrajs/algebra.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
