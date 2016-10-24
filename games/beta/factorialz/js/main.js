@@ -1,43 +1,110 @@
 var answer;
 
-$('#answerForm').submit(function(event) {
+function genCos(minNum, maxNum) {
 
-    event.preventDefault();
-    console.log("I'm running!")
+    var sqrted;
+    var sqrted2;
 
-    var squareCo1 = $('#squareco1').val() || 1;
-    var squareCo2 = $('#squareco2').val() || 1;
-    var const1 = $('#const1').val();
-    var const2 = $('#const2').val();
+    if (minNum < 0) {
+        sqrted = -Math.sqrt(-minNum);
+    } else {
+        sqrted = Math.sqrt(minNum);
+    }
 
-    console.log(answer);
+    if (maxNum < 0) {
+        sqrted2 = -Math.sqrt(-maxNum);
+    } else {
+        sqrted2 = Math.sqrt(maxNum);
+    }
 
-    const1 = parseInt(const1);
-    const2 = parseInt(const2);
+    console.log(sqrted, sqrted2);
 
-    if (!op1plus) const1 = -const1;
-    if (!op2plus) const2 = -const2;
+    var co1 = chance.integer({
+        min: sqrted,
+        max: sqrted2
+    });
+    var co2 = chance.integer({
+        min: sqrted,
+        max: sqrted2
+    });
 
-    var middleTerm1 =  squareCo1 * const2;
-    var middleTerm2 =  squareCo2 * const1;
+    return [co1, co2];
 
+}
 
-    var theirAnswer = {
-        squareCo: squareCo1*squareCo2,
-        middleTerm: middleTerm1 + middleTerm2,
-        constTerm: const1*const2
-    };
-    console.log(answer);
-    isCorrect(theirAnswer, answer);
+$('#const1').focus();
 
-    $('#const1, #const2, #squareco1, #squareco2').val('');
+var op1plus = true;
+var op2plus = true;
 
-    $('#const1').focus();
+function swOp(num, isPlus) {
+    if (num === 1) {
+        op1plus = isPlus;
+        if (op1plus) {
+            $('#op1').text('+');
+        } else {
+            $('#op1').text('-');
+        }
+    } else {
+        op2plus = isPlus;
+        if (op2plus) {
+            $('#op2').text('+');
+        } else {
+            $('#op2').text('-');
+        }
+    }
+}
+
+$('#const1').keydown(function (event) {
+    if (event.keyCode === 17) {
+        swOp(1, !op1plus);
+    }
+});
+
+$('#const2').keydown(function (event) {
+    if (event.keyCode === 17) {
+        swOp(2, !op2plus);
+    }
+});
+
+$('#answerForm-factor').submit(function(event) {
+
+    if (type === 'factor') {
+
+        event.preventDefault();
+
+        var squareCo1 = $('#squareco1').val() || 1;
+        var squareCo2 = $('#squareco2').val() || 1;
+        var const1 = $('#const1').val() || 0;
+        var const2 = $('#const2').val() || 0;
+        const1 = parseInt(const1);
+        const2 = parseInt(const2);
+
+        if (!op1plus) const1 = -const1;
+        if (!op2plus) const2 = -const2;
+
+        var middleTerm1 = squareCo1 * const2;
+        var middleTerm2 = squareCo2 * const1;
+
+        var theirAnswer = {
+            squareCo: squareCo1 * squareCo2,
+            middleTerm: middleTerm1 + middleTerm2,
+            constTerm: const1 * const2
+        };
+        isCorrect(theirAnswer, answer);
+
+        $('#const1, #const2, #squareco1, #squareco2').val('');
+
+        $('#const1').focus();
+
+        swOp(1, true);
+        swOp(2, true);
+
+    }
 
 });
 
 function isCorrect(theirAnswer, correctAnswer) {
-    console.log(theirAnswer, correctAnswer);
     if (theirAnswer.squareCo === correctAnswer.squareCo && theirAnswer.constTerm === correctAnswer.constTerm && theirAnswer.middleTerm === correctAnswer.middleTerm) {
         alert('Correct!');
         displayProblem();
@@ -47,25 +114,12 @@ function isCorrect(theirAnswer, correctAnswer) {
 
 }
 
-var op1plus = true;
-var op2plus = true;
-
 $('#op1').click(function() {
-    op1plus = !op1plus;
-    if (op1plus) {
-        $('#op1').text('+');
-    } else {
-        $('#op1').text('-');
-    }
+    swOp(1, !op1plus);
 });
 
 $('#op2').click(function() {
-    op2plus = !op2plus;
-    if (op2plus) {
-        $('#op2').text('+');
-    } else {
-        $('#op2').text('-');
-    }
+    swOp(2, !op2plus);
 });
 
 $('#nums').submit(function(event) {
@@ -80,10 +134,10 @@ $('#factor').click(function() {
    displayProblem();
 });
 
-$('#expand').click(function() {
+/* $('#expand').click(function() {
     type = 'expand';
     displayProblem();
-});
+}); For now */
 
 $('#allowCos').click(function () {
     displayProblem();
@@ -111,18 +165,13 @@ function generateProblem() {
     var isCosAllowed = $('#allowCos').prop('checked');
 
     if (isCosAllowed) {
-        var co1 = chance.integer({
-            min: minNum,
-            max: maxNum
-        });
-        var co2 = chance.integer({
-            min: minNum,
-            max: maxNum
-        });
 
-        if (co1 === 0 || co2 === 0) console.log('error');
+        coefficients = genCos(minNum, maxNum);
 
-        var coefficients = [co1, co2];
+        if (coefficients[0] === 0 || coefficients[1] === 0) coefficients = genCos(minNum, maxNum);
+
+        console.log(coefficients);
+
     } else {
         var coefficients = [1, 1];
     }
@@ -133,27 +182,36 @@ function generateProblem() {
     var middleTerm = firstMiddleTerm + secondMiddleTerm;
     var constant = num1 * num2;
 
-    var problem = squareCoefficient + 'x^2+' + middleTerm + 'x+' + constant;
+    if (type === 'factor') {
 
-    problem = problem.replace(/\+-/g, '-');
-    problem = problem.replace(/\+1x/g, '+x');
-    problem = problem.replace(/-1x/g, '-x');
-    problem = problem.replace(/\+0x/g, '');
-    problem = problem.replace(/-0x/g, '');
-    problem = problem.replace('1x^2', 'x^2');
+        var problem = squareCoefficient + 'x^2+' + middleTerm + 'x+' + constant;
 
-    console.log(squareCoefficient, middleTerm, constant);
+        problem = problem.replace(/\+-/g, '-');
+        problem = problem.replace(/\+1x/g, '+x');
+        problem = problem.replace(/-1x/g, '-x');
+        problem = problem.replace(/\+0x/g, '');
+        problem = problem.replace(/-0x/g, '');
+        problem = problem.replace('1x^2', 'x^2');
 
 
+        return {
+            problem: problem,
+            answer: {
+                squareCo: squareCoefficient,
+                middleTerm: middleTerm,
+                constTerm: constant
+            }
+        };
 
-    return {
-        problem: problem,
-        answer: {
-            squareCo: squareCoefficient,
-            middleTerm: middleTerm,
-            constTerm: constant
-        }
-    };
+    } else {
+
+        var co1 = coefficients[0];
+        var co2 = coefficients[1];
+        var const1 = num1;
+        var const2 = num2;
+        var problem = '(' + co1 + 'x+' + const1 + ')(' + co2 + 'x+' + const2 + ')';
+
+    }
 
 }
 
@@ -166,7 +224,7 @@ function displayProblem() {
 
 
     var probElem = $('#problem');
-    probElem.text('Problem: ' + problem);
+    probElem.text('Factor: ' + problem);
 
     var isCoAllowed = $('#allowCos').prop('checked');
 
