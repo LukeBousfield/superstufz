@@ -167,9 +167,8 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
 
         isCorrect(theirAnswer, answer);
 
-        $('#squareco').val('');
-        $('#mid').val('');
-        $('#const').val('');
+        $('#squareco').val('1');
+        $('#mid, #const').val('');
 
         var isCoAllowed = $('#allowCos').prop('checked');
 
@@ -287,6 +286,8 @@ function generateProblem() {
         problem = problem.replace(/\(1x/g, '(x');
         problem = problem.replace(/\+0/g, '');
         problem = problem.replace(/-0/g, '');
+        problem = problem.replace(/\(0x/g, '');
+        problem = problem.replace(/\(0x/g, '');
     }
 
     problem = problem.replace(/\+-/g, '-');
