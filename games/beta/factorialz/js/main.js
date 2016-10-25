@@ -162,6 +162,10 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
             constTerm: constTerm
         };
 
+        swOpExp(1, true);
+        swOpExp(2, true);
+        console.log('Sw0pping')
+
         isCorrect(theirAnswer, answer);
 
         $('#squareco').val('');
@@ -173,9 +177,6 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
         if (isCoAllowed) return $('#squareco').focus();
 
         $('#mid').focus();
-
-        swOpExp(1, true);
-        swOpExp(2, true);
 
     }
 
