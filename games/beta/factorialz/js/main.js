@@ -164,7 +164,6 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
 
         swOpExp(1, true);
         swOpExp(2, true);
-        console.log('Sw0pping')
 
         isCorrect(theirAnswer, answer);
 
@@ -183,7 +182,6 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
 });
 
 function isCorrect(theirAnswer, correctAnswer) {
-    if (type === 'expand') console.log(theirAnswer, correctAnswer);
     if (theirAnswer.squareCo === correctAnswer.squareCo && theirAnswer.constTerm === correctAnswer.constTerm && theirAnswer.middleTerm === correctAnswer.middleTerm) {
         alert('Correct!');
         displayProblem();
@@ -199,6 +197,15 @@ $('#op1').click(function() {
 
 $('#op2').click(function() {
     swOp(2, !op2plus);
+});
+
+$('#op1exp').click(function() {
+    swOpExp(1, !op1plusexp);
+});
+
+$('#op2exp').click(function() {
+    console.log('swapping fundamentally...');
+    swOpExp(2, !op2plusexp);
 });
 
 $('#nums').submit(function(event) {
@@ -248,8 +255,6 @@ function generateProblem() {
         coefficients = genCos(minNum, maxNum);
 
         if (coefficients[0] === 0 || coefficients[1] === 0) coefficients = genCos(minNum, maxNum);
-
-        console.log(coefficients);
 
     } else {
         var coefficients = [1, 1];
