@@ -5,6 +5,54 @@ jQuery.extend({
     }
 });
 
+$('#egoal, #fgoal, #tgoal').change(function () {
+    var egoal = $('#egoal').val();
+    var fgoal = $('#fgoal').val();
+    var tgoal = $('#tgoal').val();
+    egoal = parseInt(egoal);
+    fgoal = parseInt(fgoal);
+    tgoal = parseInt(tgoal);
+    if (egoal <= 0 || fgoal <= 0 || tgoal <= 0) {
+        return alert('Please enter valid a valid goal');
+    }
+    var scores = getPercentage();
+    factorPerc = scores.factor;
+    expandPerc = scores.expand;
+    totalPerc = scores.total;
+
+    updateScores();
+});
+
+var hasCompleted = {
+    factor: {
+        get: function() {
+            var isComplete = localStorage.getItem('fcomp') || false;
+            return isComplete;
+        },
+        set: function(isComplete) {
+            localStorage.setItem('fcomp', isComplete);
+        }
+    },
+    expand: {
+        get: function() {
+            var isComplete = localStorage.getItem('ecomp') || false;
+            return isComplete;
+        },
+        set: function(isComplete) {
+            localStorage.setItem('ecomp', isComplete);
+        }
+    },
+    both: {
+        get: function() {
+            var isComplete = localStorage.getItem('bcomp') || false;
+            return isComplete
+        },
+        set: function(isComplete) {
+            localStorage.setItem('bcomp', isComplete);
+        }
+    }
+};
+
 var answer;
 var perc = getPercentage()
 var factorPerc = perc.factor;
@@ -13,7 +61,7 @@ var totalPerc = perc.total;
 updateScores();
 
 $('#resetProgress').click(function() {
-    var sure = confirm('Are you sure');
+    var sure = confirm('Are you sure?');
     if (sure === true) {
         localStorage.clear();
         var scores = getPercentage();
@@ -36,24 +84,49 @@ $('#fgoal, #egoal, #tgoal').click(function () {
 
 function updateScores() {
 
-    console.log('I\'m running')
+    if (factorPerc < 100) {
 
-    $('#factorprogress').css({
-        width: factorPerc + '%'
-    });
-    $('#factorprogress').attr('aria-valuenow', factorPerc);
+        $('#factorprogress').css({
+            width: factorPerc + '%'
+        });
+        $('#factorprogress').attr('aria-valuenow', factorPerc);
+
+    } else {
+        $('#factorprogress').css({
+            width: '100%',
+        });
+        $('#factorprogress').attr('aria-valuenow', 100);
+    }
     $('#factorprogress').text(factorPerc + '%');
 
-    $('#expandprogress').css({
-        width: expandPerc + '%'
-    });
-    $('#expandprogress').attr('aria-valuenow', expandPerc);
+    if (expandPerc < 100) {
+
+        $('#expandprogress').css({
+            width: expandPerc + '%'
+        });
+        $('#expandprogress').attr('aria-valuenow', expandPerc);
+
+    } else {
+        $('#expandprogress').css({
+            width: '100%',
+        });
+        $('#expandprogress').attr('aria-valuenow', 100);
+    }
     $('#expandprogress').text(expandPerc + '%');
 
-    $('#totalprogress').css({
-        width: totalPerc + '%'
-    });
-    $('#totalprogress').attr('aria-valuenow', totalPerc);
+    if (totalPerc < 100) {
+
+        $('#totalprogress').css({
+            width: totalPerc + '%'
+        });
+        $('#totalprogress').attr('aria-valuenow', totalPerc);
+
+    } else {
+        $('#totalprogress').css({
+            width: '100%',
+        });
+        $('#totalprogress').attr('aria-valuenow', 100);
+    }
     $('#totalprogress').text(totalPerc + '%');
 
 }
@@ -172,19 +245,19 @@ function swOpExp(num, isPlus) {
 }
 
 $('#const1').keydown(function(event) {
-    if (event.keyCode === 17) {
+    if (event.keyCode === 17 || event.keyCode === 192) {
         swOp(1, !op1plus);
     }
 });
 
 $('#const2').keydown(function(event) {
-    if (event.keyCode === 17) {
+    if (event.keyCode === 17 || event.keyCode === 192) {
         swOp(2, !op2plus);
     }
 });
 
 $('#mid').keydown(function(event) {
-    if (event.keyCode === 17) {
+    if (event.keyCode === 17 || event.keyCode === 192) {
         swOpExp(1, !op1plusexp);
     }
 });
@@ -295,6 +368,33 @@ function isCorrect(theirAnswer, correctAnswer) {
     totalPerc = scores.total;
 
     updateScores();
+
+    if (factorPerc === 100 && hasCompleted.factor.get() === false) {
+        alert('Congratulations!  You have mastered factoring!');
+        hasCompleted.factor.set(true);
+        type = 'expand';
+        displayProblem();
+        var allowCos = $('#allowCos').prop('checked');
+        if (allowCos) {
+            $('#squareco').focus();
+        } else {
+            $('#mid').focus();
+        }
+    } else if (expandPerc === 100 && hasCompleted.expand.get() === false) {
+        alert('Congratulations!  You have mastered expanding!');
+        hasCompleted.expand.set(true);
+        type = 'factor';
+        var allowCos = $('#allowCos').prop('checked');
+        if (allowCos) {
+            $('#squareco1').focus();
+        } else {
+            $('#const1').focus();
+        }
+        displayProblem();
+    } else if (totalPerc === 100 && hasCompleted.total.get() === false) {
+        alert('Congratulations!  You have mastered both!');
+        hasCompleted.total.set(true);
+    }
 
 }
 
