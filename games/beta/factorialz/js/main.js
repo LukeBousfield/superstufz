@@ -177,9 +177,9 @@ function genCos(minNum, maxNum) {
     var sqrted2;
 
     if (minNum < 0) {
-        sqrted = -Math.sqrt(-minNum);
+        sqrted = -Math.sqrt(0);
     } else {
-        sqrted = Math.sqrt(minNum);
+        sqrted = Math.sqrt(0);
     }
 
     if (maxNum < 0) {
@@ -189,11 +189,11 @@ function genCos(minNum, maxNum) {
     }
 
     var co1 = chance.integer({
-        min: sqrted,
+        min: 1,
         max: sqrted2
     });
     var co2 = chance.integer({
-        min: sqrted,
+        min: 1,
         max: sqrted2
     });
 
@@ -471,9 +471,7 @@ function generateProblem() {
 
     if (isCosAllowed) {
 
-        coefficients = genCos(minNum, maxNum);
-
-        if (coefficients[0] === 0 || coefficients[1] === 0) coefficients = genCos(minNum, maxNum);
+        var coefficients = genCos(minNum, maxNum);
 
     } else {
         var coefficients = [1, 1];
