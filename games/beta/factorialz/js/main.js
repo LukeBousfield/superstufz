@@ -1,4 +1,102 @@
+// Make calculating percentages easier
+jQuery.extend({
+    percentage: function(a, b) {
+        return Math.round((a / b) * 100);
+    }
+});
+
 var answer;
+var perc = getPercentage()
+var factorPerc = perc.factor;
+var expandPerc = perc.expand;
+var totalPerc = perc.total;
+updateScores();
+
+$('#resetProgress').click(function() {
+    var sure = confirm('Are you sure');
+    if (sure === true) {
+        localStorage.clear();
+        var scores = getPercentage();
+        factorPerc = scores.factor;
+        expandPerc = scores.expand;
+        totalPerc = scores.total;
+
+        updateScores();
+    }
+});
+
+$('#fgoal, #egoal, #tgoal').click(function () {
+    var answer;
+    var percl = getPercentage()
+    factorPerc = percl.factor;
+    expandPerc = percl.expand;
+    totalPerc = percl.total;
+    updateScores();
+});
+
+function updateScores() {
+
+    console.log('I\'m running')
+
+    $('#factorprogress').css({
+        width: factorPerc + '%'
+    });
+    $('#factorprogress').attr('aria-valuenow', factorPerc);
+    $('#factorprogress').text(factorPerc + '%');
+
+    $('#expandprogress').css({
+        width: expandPerc + '%'
+    });
+    $('#expandprogress').attr('aria-valuenow', expandPerc);
+    $('#expandprogress').text(expandPerc + '%');
+
+    $('#totalprogress').css({
+        width: totalPerc + '%'
+    });
+    $('#totalprogress').attr('aria-valuenow', totalPerc);
+    $('#totalprogress').text(totalPerc + '%');
+
+}
+
+updateScores();
+
+function getPercentage() {
+
+    var factorGoal = parseInt($('#fgoal').val());
+    var expandGoal = parseInt($('#egoal').val());
+    var totalGoal = parseInt($('#tgoal').val());
+    if (isNaN(factorGoal) || isNaN(expandGoal) || isNaN(totalGoal)) {
+        alert('Please enter valid goal numbers (e.g. 20)');
+    }
+    var currentFactor = getScore('factor');
+    var currentExpand = getScore('expand');
+    var currentTotal = (currentFactor + currentExpand) / 2;
+    var currentFactorPerc = $.percentage(currentFactor, factorGoal);
+    var currentExpandPerc = $.percentage(currentExpand, expandGoal);
+    var currentTotalPerc = $.percentage(currentTotal, totalGoal);
+    return {
+        factor: currentFactorPerc,
+        expand: currentExpandPerc,
+        total: currentTotalPerc
+    };
+
+}
+
+function getScore(type) {
+    if (type === 'factor') {
+        return parseInt(localStorage.getItem('factorScore')) || 0;
+    } else if (type === 'expand') {
+        return parseInt(localStorage.getItem('expandScore')) || 0;
+    }
+}
+
+function setScore(type, newScore) {
+    if (type === 'factor') {
+        localStorage.setItem('factorScore', newScore);
+    } else if (type === 'expand') {
+        localStorage.setItem('expandScore', newScore);
+    }
+}
 
 function genCos(minNum, maxNum) {
 
@@ -16,8 +114,6 @@ function genCos(minNum, maxNum) {
     } else {
         sqrted2 = Math.sqrt(maxNum);
     }
-
-    console.log(sqrted, sqrted2);
 
     var co1 = chance.integer({
         min: sqrted,
@@ -89,10 +185,10 @@ $('#const2').keydown(function(event) {
 
 $('#mid').keydown(function(event) {
     if (event.keyCode === 17) {
-        console.log('switching');
         swOpExp(1, !op1plusexp);
     }
-})
+});
+
 
 $('#const').keydown(function(event) {
     if (event.keyCode === 17) {
@@ -141,18 +237,14 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
         var middleTerm = $('#mid').val() || 0;
         var constTerm = $('#const').val() || 0;
 
-        console.log(squareCo);
-
         squareCo = parseInt(squareCo);
         middleTerm = parseInt(middleTerm);
         constTerm = parseInt(constTerm);
 
         if (!op1plusexp) {
-            console.log('switching middle term');
             middleTerm = -middleTerm;
         }
         if (!op2plusexp) {
-            console.log('switching constant term');
             constTerm = -constTerm;
         }
 
@@ -183,10 +275,26 @@ $('#answerForm-factor, #answerForm-expand').submit(function(event) {
 function isCorrect(theirAnswer, correctAnswer) {
     if (theirAnswer.squareCo === correctAnswer.squareCo && theirAnswer.constTerm === correctAnswer.constTerm && theirAnswer.middleTerm === correctAnswer.middleTerm) {
         alert('Correct!');
+        setScore(type, getScore(type) + 5);
+        console.log('Congratulations!  Your score in ' + type + 'ing is now ' + getScore(type));
         displayProblem();
     } else {
         alert('Incorrect!');
+        if (getScore(type) >= 5) {
+            console.log(getScore(type) - 5);
+            setScore(type, getScore(type) - 5);
+        } else {
+            setScore(type, 0);
+        }
+        console.log('Oops! Try again.  Your score in ' + type + 'ing is now ' + getScore(type));
     }
+
+    var scores = getPercentage();
+    factorPerc = scores.factor;
+    expandPerc = scores.expand;
+    totalPerc = scores.total;
+
+    updateScores();
 
 }
 
@@ -203,12 +311,12 @@ $('#op1exp').click(function() {
 });
 
 $('#op2exp').click(function() {
-    console.log('swapping fundamentally...');
     swOpExp(2, !op2plusexp);
 });
 
 $('#nums').submit(function(event) {
     event.preventDefault();
+    updateScores();
     displayProblem();
 });
 
@@ -217,11 +325,23 @@ var type = 'factor';
 $('#factor').click(function() {
    type = 'factor';
    displayProblem();
+   var allowCos = $('#allowCos').prop('checked');
+   if (allowCos) {
+       $('#squareco1').focus();
+   } else {
+       $('#const1').focus();
+   }
 });
 
 $('#expand').click(function() {
     type = 'expand';
     displayProblem();
+    var allowCos = $('#allowCos').prop('checked');
+    if (allowCos) {
+        $('#squareco').focus();
+    } else {
+        $('#mid').focus();
+    }
 });
 
 $('#allowCos').click(function () {

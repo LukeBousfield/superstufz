@@ -10,3 +10,7 @@ label {
     font-family: sans-serif;
     font-weight: normal;
 }
+
+.progress {
+    width: 50%;
+}
