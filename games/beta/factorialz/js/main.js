@@ -12,6 +12,7 @@ $('#openSidebar').click(function() {
     $('#sidebar').css({
         width: '250px'
     });
+    event.stopPropagation()
     $(window).click(function() {
         $('#sidebar').css({
             width: '0px'
@@ -19,6 +20,7 @@ $('#openSidebar').click(function() {
     });
 
     $('#sidebar, #openSidebar').click(function(event) {
+        console.log('GEEET DUNKEEDDD ONNN')
         event.stopPropagation();
     });
 
