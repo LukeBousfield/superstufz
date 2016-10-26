@@ -5,6 +5,40 @@ jQuery.extend({
     }
 });
 
+$('#settings').hide();
+
+$('#openSidebar').click(function() {
+    console.log('hello?');
+    $('#sidebar').css({
+        width: '250px'
+    });
+    $(window).click(function() {
+        $('#sidebar').css({
+            width: '0px'
+        });
+    });
+
+    $('#sidebar, #openSidebar').click(function(event) {
+        event.stopPropagation();
+    });
+
+    $('#close').click(function() {
+        $('#sidebar').css({
+            width: '0px'
+        });
+    });
+});
+
+$('#showSettings').click(function() {
+    $('#settings').show();
+    $('#play').hide();
+});
+
+$('#showPlay').click(function() {
+    $('#settings').hide();
+    $('#play').show();
+});
+
 $('#egoal, #fgoal, #tgoal').change(function () {
     var egoal = $('#egoal').val();
     var fgoal = $('#fgoal').val();
@@ -384,13 +418,13 @@ function isCorrect(theirAnswer, correctAnswer) {
         alert('Congratulations!  You have mastered expanding!');
         hasCompleted.expand.set(true);
         type = 'factor';
+        displayProblem();
         var allowCos = $('#allowCos').prop('checked');
         if (allowCos) {
             $('#squareco1').focus();
         } else {
             $('#const1').focus();
         }
-        displayProblem();
     } else if (totalPerc === 100 && hasCompleted.total.get() === false) {
         alert('Congratulations!  You have mastered both!');
         hasCompleted.total.set(true);

@@ -6,27 +6,46 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css" />
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <div class="page-header">
+            <span href="#" id="openSidebar" class="glyphicon glyphicon-cog pull-left"></span>
             <h1 class="text-center">Factorialz</h1>
             <p class="text-center">Cross your Ts, dot your Is, and factor your Zs.</p>
         </div>
-        <!-- Body -->
-        <div class="jumbotron text-center">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidenav">
+            <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
+            <a href="#" id="showPlay">Play</a>
+            <a href="#" id="showSettings">Settings</a>
+        </div>
+        <!-- Settings -->
+        <div id="settings" class="jumbotron text-center">
+            <div class="page-header">
+                <h1>Settings</h1>
+            </div>
+            <h2>Problems</h2>
             <form id="nums">
                 <label class="text-center" for="minNum">Allow roots from </label>
                 <input type="number" class="text-center" id="minNum" value="-10" />
                 to
                 <input type="number" class="text-center" id="maxNum" value="10" />
                 <input type="submit" class="text-center btn btn-primary form-control" id="applyChanges" value="Apply changes" />
+                <br />
+                <div class="checkbox-inline">
+                    <label for="allowCos"><input id="allowCos" type="checkbox" />Allow coefficients of x^2</label>
+                </div>
             </form>
-            <br />
-            <br />
-
-            <br />
+            <h2>Goals</h2>
+            <label>Factoring: <input type="number" id="fgoal" class="input-sm" value="100" /></label>
+            <label>Expanding: <input type="number" id="egoal" class="input-sm" value="100" /></label>
+            <label>Total: <input type="number" id="tgoal" class="input-sm" value="100" /></label>
+        </div>
+        <!-- Body -->
+        <div id="play" class="jumbotron text-center">
 
             <button id="resetProgress" class="btn btn-danger">Reset Progress</button>
 
@@ -38,7 +57,6 @@
                     0%
                 </div>
             </div>
-            <label>Goal: <input type="number" id="fgoal" class="input-sm" value="100" /></label>
 
             <br />
             Expanding
@@ -47,7 +65,6 @@
                     0%
                 </div>
             </div>
-            <label>Goal: <input type="number" id="egoal" class="input-sm" value="100" /></label>
 
             <br />
             Total
@@ -56,13 +73,8 @@
                     0%
                 </div>
             </div>
-            <label>Goal: <input type="number" id="tgoal" class="input-sm" value="100" /></label>
 
             <br />
-
-            <div class="checkbox-inline">
-                <label for="allowCos"><input id="allowCos" type="checkbox" />Allow coefficients of x^2</label>
-            </div>
 
             <button class="pull-left btn btn-success" id="factor">Factoring</button>
             <button class="pull-right btn btn-danger" id="expand">Expanding</button>
@@ -93,7 +105,7 @@
 
         <div class="panel-footer">
             <h3>Instructions</h3>
-            <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding.  You can see your progress on both skills on the progress bar (NOTE: not yet functional).</p>
+            <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding.  You can see your progress on both skills on the progress bar.</p>
         </div>
         <!-- Scripts -->
         <script src="lib/jquery/dist/jquery.min.js"></script>

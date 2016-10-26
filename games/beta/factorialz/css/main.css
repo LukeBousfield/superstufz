@@ -14,3 +14,11 @@ label {
 .progress {
     width: 50%;
 }
+
+span.glyphicon-cog {
+    font-size: 3em;
+}
+
+#openSidebar:hover {
+    cursor: pointer;
+}
