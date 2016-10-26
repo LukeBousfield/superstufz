@@ -12,7 +12,7 @@ $('#openSidebar').click(function() {
     $('#sidebar').css({
         width: '250px'
     });
-    event.stopPropagation()
+    event.stopPropagation();
     $(window).click(function() {
         $('#sidebar').css({
             width: '0px'
