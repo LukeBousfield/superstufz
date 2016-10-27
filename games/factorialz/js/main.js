@@ -179,7 +179,7 @@ function getPercentage() {
     }
     var currentFactor = getScore('factor');
     var currentExpand = getScore('expand');
-    var currentTotal = (currentFactor + currentExpand) / 2;
+    var currentTotal = (currentFactor + currentExpand);
     var currentFactorPerc = $.percentage(currentFactor, factorGoal);
     var currentExpandPerc = $.percentage(currentExpand, expandGoal);
     var currentTotalPerc = $.percentage(currentTotal, totalGoal);

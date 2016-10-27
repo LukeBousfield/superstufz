@@ -5,7 +5,6 @@
     "mobileFriendly": true,
     "ageRating": 0,
     "img": "http://superstufz.com/games/beta/factorialz",
-    "id": "beta/factorialz",
-    "show": true
+    "id": "factorialz"
   }
 ]
