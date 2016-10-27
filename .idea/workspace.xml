@@ -2,291 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b77f221-ae64-4536-8b6d-0daec26b0175" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/bower.json" afterPath="$PROJECT_DIR$/games/factorialz/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/css/main.css" afterPath="$PROJECT_DIR$/games/factorialz/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/css/sidebar.css" afterPath="$PROJECT_DIR$/games/factorialz/css/sidebar.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/index.html" afterPath="$PROJECT_DIR$/games/factorialz/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/js/main.js" afterPath="$PROJECT_DIR$/games/factorialz/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/algebrajs/algebra.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/algebrajs/algebra.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/.bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/Gemfile" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/Gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/Gemfile.lock" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/Gemfile.lock" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/Gruntfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/ISSUE_TEMPLATE.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/README.md" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap-theme.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/css/bootstrap.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/dist/js/npm.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/dist/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/.jshintrc" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/.jshintrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/bs-commonjs-generator.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/bs-commonjs-generator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/bs-glyphicons-data-generator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/bs-lessdoc-parser.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/bs-raw-files-generator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/change-version.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/change-version.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/configBridge.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/configBridge.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/npm-shrinkwrap.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/grunt/sauce_browsers.yml" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/grunt/sauce_browsers.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/.jscsrc" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/.jscsrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/.jshintrc" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/.jshintrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/affix.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/alert.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/button.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/carousel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/collapse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/dropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/modal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/popover.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/scrollspy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/tab.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/tooltip.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/js/transition.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/.csscomb.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/.csscomb.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/.csslintrc" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/.csslintrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/alerts.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/badges.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/bootstrap.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/breadcrumbs.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/button-groups.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/carousel.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/close.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/code.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/component-animations.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/dropdowns.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/forms.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/glyphicons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/grid.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/input-groups.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/jumbotron.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/labels.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/labels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/list-group.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/media.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/alerts.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/alerts.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/background-variant.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/border-radius.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/center-block.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/clearfix.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/forms.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/forms.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/gradients.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/grid-framework.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/grid.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/grid.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/hide-text.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/image.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/image.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/labels.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/labels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/list-group.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/list-group.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/nav-divider.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/nav-vertical-align.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/opacity.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/pagination.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/panels.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/panels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/progress-bar.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/reset-filter.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/reset-text.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/reset-text.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/resize.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/resize.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/responsive-visibility.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/size.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/size.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/tab-focus.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/table-row.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/table-row.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/text-emphasis.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/text-overflow.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/mixins/vendor-prefixes.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/modals.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/navbar.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/navs.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/normalize.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/normalize.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/pager.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/pagination.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/panels.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/popovers.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/print.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/progress-bars.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/responsive-embed.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/responsive-embed.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/responsive-utilities.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/scaffolding.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/tables.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/theme.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/thumbnails.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/tooltip.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/type.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/utilities.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/variables.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/less/wells.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/nuget/MyGet.ps1" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/nuget/MyGet.ps1" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/nuget/bootstrap.less.nuspec" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/nuget/bootstrap.less.nuspec" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/nuget/bootstrap.nuspec" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/nuget/bootstrap.nuspec" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/package.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/bootstrap/package.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/bootstrap/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/.bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/.travis.yml" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/.travis.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/Gruntfile.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/Gruntfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/LICENSE" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/README.md" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/chance.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/chance.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/component.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/component.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/dist/chance.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/dist/chance.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/dist/chance.min.js.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/dist/chance.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/package.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.address.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.address.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.basic.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.basic.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.company.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.company.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.file.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.file.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.finance.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.finance.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.helpers.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.helpers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.misc.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.misc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.mobile.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.mobile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.normal.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.normal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.person.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.person.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.regional.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.regional.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.text.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.text.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.time.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.time.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/test/test.web.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/test/test.web.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/chance/util/yob-to-json.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/chance/util/yob-to-json.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/.bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/AUTHORS.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/LICENSE.txt" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/README.md" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/bower.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/core.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/core.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.slim.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.slim.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.slim.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/dist/jquery.slim.min.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/dist/jquery.slim.min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/external/sizzle/LICENSE.txt" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/external/sizzle/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/external/sizzle/dist/sizzle.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/external/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/external/sizzle/dist/sizzle.min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/.eslintrc.json" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/.eslintrc.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/jsonp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/load.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/parseXML.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/var/location.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/var/location.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/var/nonce.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/var/rquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/ajax/xhr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes/attr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes/classes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes/prop.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/attributes/val.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/callbacks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/DOMEval.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/DOMEval.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/access.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/init.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/parseHTML.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/ready-no-deferred.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/ready-no-deferred.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/ready.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/readyException.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/readyException.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/stripAndCollapse.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/stripAndCollapse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/core/var/rsingleTag.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/addGetHookIf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/adjustCSS.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/adjustCSS.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/curCSS.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/showHide.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/showHide.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/cssExpand.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/getStyles.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/isHiddenWithinTree.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/isHiddenWithinTree.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/rmargin.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/css/var/swap.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/css/var/swap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/data.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/data/Data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/data/var/acceptData.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/data/var/acceptData.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/data/var/dataPriv.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/data/var/dataPriv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/data/var/dataUser.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/data/var/dataUser.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/deferred.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/deferred/exceptionHook.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/deferred/exceptionHook.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/deprecated.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/dimensions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/effects.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/effects.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/effects/Tween.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/effects/animatedSelector.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event/ajax.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event/alias.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event/focusin.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event/focusin.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/event/trigger.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/event/trigger.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/exports/amd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/exports/global.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/buildFragment.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/buildFragment.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/getAll.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/getAll.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/setGlobalEval.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/setGlobalEval.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/var/rscriptType.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/var/rscriptType.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/var/rtagName.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/var/rtagName.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/manipulation/wrapMap.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/manipulation/wrapMap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/offset.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/offset.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/queue.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/queue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/queue/delay.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/selector-native.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/selector-sizzle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/selector.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/selector.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/serialize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/traversing.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/traversing/findFilter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/traversing/var/dir.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/traversing/var/dir.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/traversing/var/siblings.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/traversing/var/siblings.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/ObjectFunctionString.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/ObjectFunctionString.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/arr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/class2type.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/concat.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/document.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/document.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/documentElement.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/documentElement.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/fnToString.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/fnToString.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/getProto.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/getProto.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/hasOwn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/indexOf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/pnum.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/push.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/rcssNum.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/rcssNum.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/rnothtmlwhite.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/rnothtmlwhite.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/slice.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/var/toString.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/games/beta/factorialz/lib/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/games/factorialz/lib/jquery/src/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/factorialz/img/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/games.json" afterPath="$PROJECT_DIR$/data/games.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -334,7 +53,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
+            <state relative-caret-position="512">
               <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding />
             </state>
@@ -354,8 +73,8 @@
       <file leaf-file-name="games.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/games.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="96">
+              <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -495,7 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="games" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,7 +232,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="beta" />
+              <option name="myItemId" value="factorialz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superstufz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superstufz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factorialz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superstufz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superstufz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,11 +301,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/games/factorialz/img" />
+      <recent name="$PROJECT_DIR$/games/factorialz" />
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/games" />
       <recent name="$PROJECT_DIR$/games/beta" />
-      <recent name="$PROJECT_DIR$/games/overstory/img" />
-      <recent name="$PROJECT_DIR$/games/overstory" />
-      <recent name="$PROJECT_DIR$/img/thumbs" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (2)">
@@ -649,12 +404,12 @@
       <workItem from="1476845539233" duration="6499000" />
       <workItem from="1477269485438" duration="4251000" />
       <workItem from="1477410393910" duration="986000" />
-      <workItem from="1477449750713" duration="9365000" />
+      <workItem from="1477449750713" duration="9941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28629000" />
+    <option name="totallyTimeSpent" value="29205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
@@ -901,14 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/games/factorialz/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -917,10 +664,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/games.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="96">
+          <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
           <folding />
         </state>
       </provider>
