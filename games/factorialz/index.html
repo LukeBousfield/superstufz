@@ -21,6 +21,7 @@
             <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
             <a href="#" id="showPlay">Play</a>
             <a href="#" id="showSettings">Settings</a>
+            <a href="#" id="showInstr">Instructions</a>
         </div>
         <!-- Settings -->
         <div id="settings" class="jumbotron text-center">
@@ -43,6 +44,11 @@
             <label>Factoring: <input type="number" id="fgoal" class="input-sm" value="100" /></label>
             <label>Expanding: <input type="number" id="egoal" class="input-sm" value="100" /></label>
             <label>Total: <input type="number" id="tgoal" class="input-sm" value="100" /></label>
+        </div>
+        <!-- Instructions -->
+        <div class="jumbotron" id="instr">
+            <h3>Instructions</h3>
+            <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding.  You can see your progress on both skills on the progress bar.</p>
         </div>
         <!-- Body -->
         <div id="play" class="jumbotron text-center">
@@ -101,11 +107,6 @@
                 </form>
             </div>
 
-        </div>
-
-        <div class="panel-footer">
-            <h3>Instructions</h3>
-            <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding.  You can see your progress on both skills on the progress bar.</p>
         </div>
         <!-- Scripts -->
         <script src="lib/jquery/dist/jquery.min.js"></script>

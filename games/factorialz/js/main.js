@@ -6,6 +6,7 @@ jQuery.extend({
 });
 
 $('#settings').hide();
+$('#instr').hide();
 
 $('#openSidebar').click(function() {
     console.log('hello?');
@@ -20,7 +21,6 @@ $('#openSidebar').click(function() {
     });
 
     $('#sidebar, #openSidebar').click(function(event) {
-        console.log('GEEET DUNKEEDDD ONNN')
         event.stopPropagation();
     });
 
@@ -34,11 +34,28 @@ $('#openSidebar').click(function() {
 $('#showSettings').click(function() {
     $('#settings').show();
     $('#play').hide();
+    $('#instr').hide();
+    $('#sidebar').css({
+        width: '0px'
+    });
 });
 
 $('#showPlay').click(function() {
     $('#settings').hide();
     $('#play').show();
+    $('#instr').hide();
+    $('#sidebar').css({
+        width: '0px'
+    });
+});
+
+$('#showInstr').click(function() {
+    $('#settings').hide();
+    $('#play').hide();
+    $('#instr').show();
+    $('#sidebar').css({
+        width: '0px'
+    });
 });
 
 $('#egoal, #fgoal, #tgoal').change(function () {
