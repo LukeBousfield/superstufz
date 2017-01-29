@@ -36,7 +36,7 @@ function showGame(opts) {
     console.log(gameElem);
     gameElem.append("<h3 class='text-center'>" + opts.title + "</h3>");
     gameElem.append("<p class='text-center'>" + opts.desc + "</p>");
-    gameElem.append('<img class="center-block thumbnail" src="' + opts.img + '" />');
+    gameElem.append('<img class="center-block thumbnail" width="20%" length="20%" src="' + opts.img + '" />');
     gameElem.click(function () {
         location.href = url;
     });
