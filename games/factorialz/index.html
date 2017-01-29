@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorialz - SuperStufz</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css" />
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="page-header">
+        <span href="#" id="openSidebar" class="glyphicon glyphicon-cog pull-left"></span>
+        <h1 class="text-center">Factorialz</h1>
+        <p class="text-center">Cross your Ts, dot your Is, and factor your Zs.</p>
+    </div>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidenav">
+        <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
+        <a href="#" id="showPlay">Play</a>
+        <a href="#" id="showSettings">Settings</a>
+        <a href="#" id="showInstr">Instructions</a>
+    </div>
+    <!-- Settings -->
+    <div id="settings" class="jumbotron text-center">
+        <div class="page-header">
+            <h1>Settings</h1>
+        </div>
+        <h2>Problems</h2>
+        <form id="nums">
+            <label class="text-center" for="minNum">Allow roots from </label>
+            <input type="number" class="text-center" id="minNum" value="-10" />
+            to
+            <input type="number" class="text-center" id="maxNum" value="10" />
+            <input type="submit" class="text-center btn btn-primary form-control" id="applyChanges" value="Apply changes" />
+            <br />
+            <div class="checkbox-inline">
+                <label for="allowCos"><input id="allowCos" type="checkbox" />Allow coefficients of x²</label>
+            </div>
+        </form>
+        <h2>Goals</h2>
+        <label>Factoring: <input type="number" id="fgoal" class="input-sm" value="100" /></label>
+        <label>Expanding: <input type="number" id="egoal" class="input-sm" value="100" /></label>
+        <label>Total: <input type="number" id="tgoal" class="input-sm" value="100" /></label>
+    </div>
+    <!-- Instructions -->
+    <div class="jumbotron" id="instr">
+        <h3>Instructions</h3>
+        <p>Type the correct numbers in the blanks, and click on the operators to switch them between + and -.  Also, you can switch between factoring and expanding.  You can see your progress on both skills on the progress bar.</p>
+    </div>
+    <!-- Body -->
+    <div id="play" class="jumbotron text-center">
+
+        <button class="pull-left btn btn-success" id="factor">Factoring</button>
+        <button class="pull-right btn btn-danger" id="expand">Expanding</button>
+
+        <div id="probswer">
+            <p id="problem"></p>
+            <form id="answerForm-factor" class="form-group-sm">
+                <label>Answer: (<input type="number" id="squareco1" class="input-sm input-xm" value="1" autofocus />x</label>
+                <label id="op1" for="const1"> + </label>
+                <input type="number" id="const1" class="input-sm" />
+                <label>)(<input type="number" id="squareco2" class="input-sm input-xm" value="1" />x</label>
+                <label id="op2" for="const2"> + </label>
+                <input type="number" id="const2" class="input-sm" />
+                )
+                <input type="submit" class="btn btn-default" />
+            </form>
+            <form id="answerForm-expand" class="form-group-sm">
+                <label>Answer: <input type="number" id="squareco" class="input-sm input-xm" value="1" autofocus />x²</label>
+                <label type="number" id="op1exp" for="mid"> + </label>
+                <input type="number" id="mid" class="input-sm input-xm"/>x
+                <label id="op2exp" for="const"> + </label>
+                <input type="number" id="const" class="input-sm input-xm" />
+                <input type="submit" class="btn btn-default" />
+            </form>
+        </div>
+
+        <h3 id="msg"></h3>
+
+        <br id="linebr" />
+        <br />
+
+        <button id="resetProgress" class="btn btn-danger">Reset Progress</button>
+
+        <br />
+
+        Factoring
+        <div class="progress center-block">
+            <div id="factorprogress" class="progress-bar progress-bar-striped progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                0%
+            </div>
+        </div>
+
+        <br />
+        Expanding
+        <div class="progress center-block">
+            <div id="expandprogress" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                0%
+            </div>
+        </div>
+
+        <br />
+        Total
+        <div class="progress center-block">
+            <div id="totalprogress" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                0%
+            </div>
+        </div>
+
+        <br />
+
+    </div>
+    <!-- Scripts -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/chance/dist/chance.min.js"></script>
+    <script src="lib/algebrajs/algebra.min.js"></script>
+    <script src="js/main.js"></script>
+</div>
+</body>
+</html>

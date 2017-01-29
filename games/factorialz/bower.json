@@ -1,0 +1,26 @@
+{
+  "name": "factorialz",
+  "description": "Factor your Zs",
+  "main": "index.html",
+  "keywords": [
+    "math",
+    "superstufzgames"
+  ],
+  "authors": [
+    "Luke Bousfield"
+  ],
+  "license": "MIT",
+  "homepage": "superstufz.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "chance": "^1.0.4"
+  }
+}
