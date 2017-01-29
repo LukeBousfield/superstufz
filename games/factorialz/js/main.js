@@ -447,7 +447,9 @@ function isCorrect(theirAnswer, correctAnswer) {
     if (theirAnswer.squareCo === correctAnswer.squareCo && theirAnswer.constTerm === correctAnswer.constTerm && theirAnswer.middleTerm === correctAnswer.middleTerm) {
         $('#msg').show();
         $('#linebr').hide();
-        alert('Correct!');
+        $('#statusCorrect').remove();
+        $('#play').prepend('<div class="alert alert-success" id="statusCorrect"><strong>Correct!</strong>  Way to go!</div>');
+        $('#statusIncorrect').remove();
         if (streak === 0) {
             setScore(type, getScore(type) + 5);
         } else {
@@ -460,7 +462,9 @@ function isCorrect(theirAnswer, correctAnswer) {
     } else {
         $('#msg').hide();
         $('#msg').text('');
-        alert('Incorrect!');
+        $('#statusIncorrect').remove();
+        $('#play').prepend('<div class="alert alert-danger" id="statusIncorrect"><strong>Incorrect!</strong>  Too bad!</div>');
+        $('#statusCorrect').remove();
         if (getScore(type) >= 5) {
             console.log(getScore(type) - 5);
             setScore(type, getScore(type) - 5);
