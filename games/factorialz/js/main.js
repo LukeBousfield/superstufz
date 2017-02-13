@@ -1,3 +1,6 @@
+// Luke Bousfield - Factorialz, 2017
+// Dedicated to Chris Erwin, Algebra I teacher at Treasure Valley Math and Science Center
+
 // Make calculating percentages easier
 jQuery.extend({
     percentage: function(a, b) {
