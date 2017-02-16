@@ -215,5 +215,5 @@ function setCorrect() {
 }
 
 function setIncorrect() {
-    $('#status').html('<div class="alert alert-danger"><strong>Incorrect!</strong><p style="font-size: 16px">Better luck next time!<p></p></div>');
+    $('#status').html('<div class="alert alert-danger"><strong>Incorrect!</strong><p style="font-size: 16px">Sorry, Incorrect!<p></p></div>');
 }
