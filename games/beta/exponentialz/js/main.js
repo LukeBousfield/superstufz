@@ -211,9 +211,9 @@ function onAnswerSubmit(event) {
 $('#answer').submit(onAnswerSubmit);
 
 function setCorrect() {
-    $('#status').html('<div class="alert alert-success"><strong>Correct!</strong>Way to go!</div>');
+    $('#status').html('<div class="alert alert-success"><strong>Correct!</strong><p style="font-size: 16px">Way to go!</p></div>');
 }
 
 function setIncorrect() {
-    $('#status').html('<div class="alert alert-danger"><strong>Incorrect!</strong>Better luck next time!</div>');
+    $('#status').html('<div class="alert alert-danger"><strong>Incorrect!</strong><p style="font-size: 16px">Better luck next time!<p></p></div>');
 }
