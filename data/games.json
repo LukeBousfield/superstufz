@@ -9,10 +9,10 @@
   },
   {
     "title": "Exponentialz",
-    "description": "Now we're talking power",
+    "description": "Now we're talking power (NOTE: In Beta)",
     "mobileFriendly": true,
     "ageRating": 0,
     "img": "http://superstufz.com/games/beta/exponentialz/img/exponentialzlogo.svg",
-    "id": "beta/exponentialz"
+    "id": "exponentialz"
   }
 ]
