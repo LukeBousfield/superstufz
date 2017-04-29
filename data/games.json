@@ -20,7 +20,7 @@
     "description": "How many steps does it take to 1?  Find out with this handy calculator!",
     "mobileFriendly": true,
     "ageRating": 0,
-    "img": "../games/collatzconjecture/collatz2.jpg",
+    "img": "http://superstufz.com/games/collatzconjecture/collatz2.jpg",
     "id": "collatzconjecture"
   }
 ]
