@@ -14,5 +14,13 @@
     "ageRating": 0,
     "img": "http://superstufz.com/games/exponentialz/img/exponentialzlogo.svg",
     "id": "exponentialz"
+  },
+  {
+    "title": "Collatz Conjecture",
+    "description": "How many steps does it take to 1?  Find out with this handy calculator!",
+    "mobileFriendly": true,
+    "ageRating": 0,
+    "img": "../games/collatzconjecture/collatz2.jpg",
+    "id": "collatzconjecture"
   }
 ]
