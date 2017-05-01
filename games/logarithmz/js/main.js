@@ -7,6 +7,7 @@ var minBase = MIN_BASE_DEFAULT;
 var maxBase = MAX_BASE_DEFAULT;
 var minExp = MIN_EXP_DEFAULT;
 var maxExp = MAX_EXP_DEFAULT;
+var streak = 0;
 
 $('#answer').focus();
 
@@ -70,11 +71,17 @@ function takeInput() {
         $('#status').text('Correct!');
         $('#status').css('color', '#7CFC00');
         displayProblem();
+        streak++;
+        $('#streak').css('color', 'rgb(' + streak*50 + ',0,0)');
+        console.log($('#streak').attr('style'));
+        $('#streak').text('Streak: ' + streak);
     } else if (globalProbswer.answer.toString() !== answer.toString()) {
         // Display "Incorrect!"
         console.log('Incorrect!');
         $('#status').text('Incorrect!');
         $('#status').css('color', '#ff0000');
+        $('#streak').css('color', 'rgb(0,0,0)');
+        streak = 0;
     }
     // Clear input
     $('#answer').val('');
