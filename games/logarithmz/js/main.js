@@ -1,8 +1,12 @@
-var MIN_BASE = 0;
-var MAX_BASE = 15;
-var MIN_EXP = -3;
-var MAX_EXP = 3;
+var MIN_BASE_DEFAULT = 0;
+var MAX_BASE_DEFAULT = 15;
+var MIN_EXP_DEFAULT = -3;
+var MAX_EXP_DEFAULT = 3;
 var globalProbswer;
+var minBase = MIN_BASE_DEFAULT;
+var maxBase = MAX_BASE_DEFAULT;
+var minExp = MIN_EXP_DEFAULT;
+var maxExp = MAX_EXP_DEFAULT;
 
 $('#answer').focus();
 
@@ -10,20 +14,19 @@ $('#answer').focus();
 function generateProbswer() {
 
     // Generate random base
-    var base = chance.integer({
-        min: MIN_BASE,
-        max: MAX_BASE
-    });
+    var base = parseInt(randomInt(parseInt(minBase), parseInt(maxBase)));
     // Generate random exponent (answer)
-    var exp = chance.integer({
-        min: MIN_EXP,
-        max: MAX_EXP
-    });
+    var exp = parseInt(randomInt(parseInt(minExp), parseInt(maxExp)));
+
+    console.log(parseInt(minBase), parseInt(maxBase));
+
+    console.log(base, exp);
 
     // Calculate other number
     if (exp >= 0) {
         var otherNumber = Math.pow(base, exp);
     } else {
+        console.log(exp);
         var otherNumber = '<table style="display: inline"><tbody><tr><td style="border-bottom:solid 1px">1</td></tr><tr><td>' + Math.pow(base, -1*exp) + '</td></tr></tbody></table>';
     }
 
@@ -85,3 +88,7 @@ function displayProblem() {
 }
 
 displayProblem();
+
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

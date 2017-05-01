@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <title>Logarithmz</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pullout-navbar.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/logarithmz-logo.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container text-center">
         <div class="page-header">
+            <span id="openNav" class="glyphicon glyphicon-cog pull-left" style="font-size: 3em"></span>
             <h1>Logarithmz</h1>
+            <p>The opposite of power</p>
         </div>
-        <div class="jumbotron">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+            <a href="#" id="playBtn">Play</a>
+            <a href="#" id="optionsBtn">Options</a>
+            <a href="#" id="instructionsBtn">Instructions</a>
+        </div>
+        <div class="jumbotron" id="options">
+          <h1>Options</h1>
+          <label for="minBase">Minimum Base</label>
+          <input id="minBase" type="number" value="0">
+          <br>
+          <label for="maxBase">Maximum Base</label>
+          <input id="maxBase" type="number" value="15">
+          <br>
+          <label for="minExp">Minimum Exponent</label>
+          <input id="minExp" type="number" value="-3">
+          <br>
+          <label for="maxExp">Maximum Exponent</label>
+          <input id="maxExp" type="number" value="3">
+          <br>
+          <button id="applyChanges" class="btn btn-primary">Apply Changes</button>
+        </div>
+        <div class="jumbotron" id="instructions">
+          <h1>Instructions</h1>
+          <p>Logarithms simply ask the question: "What power do I need to raise a base to get another number?".  Logarithms are usually expressed in the form x=log<sub>b</sub>a, where x is the exponent, b is the base, and a is the number you need to get the base to.  Find out more about logarithms <a href="https://en.wikipedia.org/wiki/Logarithm">here</a></p>
+        </div>
+        <div class="jumbotron" id="play">
+            <h1>Play</h1>
             <h4 id="problem"></h4>
             <input id="answer" type="number">
             <button class="btn btn-primary" id="submit">Submit</button>
@@ -21,5 +52,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.8/chance.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/settings.js"></script>
 </body>
 </html>
