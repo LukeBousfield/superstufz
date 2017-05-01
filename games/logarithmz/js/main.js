@@ -81,6 +81,7 @@ function takeInput() {
         $('#status').text('Incorrect!');
         $('#status').css('color', '#ff0000');
         $('#streak').css('color', 'rgb(0,0,0)');
+        $('#streak').text('Streak: 0');
         streak = 0;
     }
     // Clear input
