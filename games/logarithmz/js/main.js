@@ -8,6 +8,7 @@ var maxBase = MAX_BASE_DEFAULT;
 var minExp = MIN_EXP_DEFAULT;
 var maxExp = MAX_EXP_DEFAULT;
 var streak = 0;
+var mode = 'evaluate';
 
 $('#answer').focus();
 
@@ -19,6 +20,8 @@ function generateProbswer() {
     // Generate random exponent (answer)
     var exp = parseInt(randomInt(parseInt(minExp), parseInt(maxExp)));
 
+    var otherNumberRaw;
+
     console.log(parseInt(minBase), parseInt(maxBase));
 
     console.log(base, exp);
@@ -26,16 +29,37 @@ function generateProbswer() {
     // Calculate other number
     if (exp >= 0) {
         var otherNumber = Math.pow(base, exp);
+        otherNumberRaw = otherNumber;
     } else {
         console.log(exp);
-        var otherNumber = '<table style="display: inline"><tbody><tr><td style="border-bottom:solid 1px">1</td></tr><tr><td>' + Math.pow(base, -1*exp) + '</td></tr></tbody></table>';
+        otherNumberRaw = Math.pow(base, -1*exp)
+        var otherNumber = '<table style="display: inline"><tbody><tr><td style="border-bottom:solid 1px">1</td></tr><tr><td>' + otherNumberRaw + '</td></tr></tbody></table>';
     }
 
-    if (base === 0 || base === 1 || otherNumber === 0) return generateProbswer();
+    if (mode === 'evaluate') {
+      $('#argTable').hide();
+      $('#answer').show();
+      if (base === 0 || base === 1 || otherNumber === 0) return generateProbswer();
+    } else if (mode === 'base') {
+      $('#argTable').hide();
+      $('#answer').show();
+      if (exp === 0) return generateProbswer();
+    } else if (mode === 'argument') {
+      if (base === 0) return generateProbswer();
+      if (exp < 0) {
+        console.log('running, sir');
+        $('#argTable').css('display', 'inline');
+        $('#answer').hide();
+      } else {
+        $('#argTable').hide();
+        $('#answer').show();
+      }
+    }
 
     var problem = {
         base: base,
-        otherNumber: otherNumber
+        otherNumber: otherNumber,
+        otherNumberRaw: otherNumberRaw
     };
     var answer = exp;
 
@@ -53,7 +77,7 @@ $('#submit').click(function () {
 });
 
 // When enter pressed
-$('#answer').keydown(function (e) {
+$('#answer, #argAnswer').keydown(function (e) {
     if (e.keyCode === 13) {
         // Take input
         takeInput();
@@ -62,10 +86,26 @@ $('#answer').keydown(function (e) {
 
 function takeInput() {
     // Check answer
-    var answer = $('#answer').val();
-    console.log(answer.toString(), globalProbswer.answer.toString());
+    var theirAnswer = (mode === 'argument' && globalProbswer.answer < 0) ? 1/$('#argAnswer').val() : $('#answer').val();
+    var correct;
+
+    if (mode === 'evaluate') {
+      correct = (theirAnswer.toString() === globalProbswer.answer.toString());
+      $('#answer').focus();
+    } else if (mode === 'base') {
+      correct = (theirAnswer.toString() === globalProbswer.problem.base.toString());
+      $('#argAnswer').focus();
+    } else if (mode === 'argument') {
+      if (globalProbswer.answer < 0) {
+        correct = (theirAnswer.toString() === (1/globalProbswer.problem.otherNumberRaw).toString());
+      } else {
+        correct = (theirAnswer.toString() === globalProbswer.problem.otherNumberRaw.toString());
+      }
+      $('#argAnswer').focus();
+    }
+
     // If right
-    if (globalProbswer.answer.toString() === answer.toString()) {
+    if (correct) {
         // Display "Correct!"
         console.log('Correct!');
         $('#status').text('Correct!');
@@ -86,13 +126,25 @@ function takeInput() {
     }
     // Clear input
     $('#answer').val('');
+    $('#argAnswer').val('');
 }
 
 function displayProblem() {
+    console.log(mode);
     // Display problem
     var probswer = generateProbswer();
     globalProbswer = probswer;
-    $('#problem').html('log' + probswer.problem.base.toString().sub() + probswer.problem.otherNumber);
+    if (mode === 'evaluate') {
+      $('#problem').html('x = log' + probswer.problem.base.toString().sub() + probswer.problem.otherNumber);
+      $('#answer').focus();
+    } else if (mode === 'base') {
+      $('#problem').html(probswer.answer + ' = log' + 'x'.sub() + probswer.problem.otherNumber);
+      $('#answer').focus();
+    } else if (mode === 'argument') {
+      $('#problem').html(probswer.answer + ' = log' + probswer.problem.base.toString().sub() + 'x');
+      $('#argAnswer').focus();
+    }
+    $('#answer, #argAnswer').val('');
 }
 
 displayProblem();
@@ -100,3 +152,19 @@ displayProblem();
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+$('#selectEvaluate').click(function () {
+  mode = 'evaluate';
+  displayProblem();
+});
+
+$('#selectBase').click(function () {
+
+  mode = 'base';
+  displayProblem();
+});
+
+$('#selectArgument').click(function() {
+  mode = 'argument';
+  displayProblem();
+});

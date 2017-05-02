@@ -39,12 +39,17 @@
         </div>
         <div class="jumbotron" id="instructions">
           <h1>Instructions</h1>
-          <p>Logarithms simply ask the question: "What power do I need to raise a base to get another number?".  Logarithms are usually expressed in the form x=log<sub>b</sub>a, where x is the exponent, b is the base, and a is the number you need to get the base to. More information about logarithms <a href="https://en.wikipedia.org/wiki/Logarithm">here</a> and <a href="https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/v/logarithms">here</a></p>
+          <p>Logarithms simply ask the question: "What power do I need to raise a base to get another number?".  Logarithms are usually expressed in the form x=log<sub>b</sub>a, where x is the exponent, b is the base, and a is the argument, or the number you need to get the base to. More information about logarithms can be found <a href="https://en.wikipedia.org/wiki/Logarithm">here</a> and <a href="https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/v/logarithms">here</a></p>
         </div>
         <div class="jumbotron" id="play">
             <h1>Play</h1>
+            <button id="selectBase" class="pull-left btn btn-primary">Solve for Base</button>
+            <button id="selectEvaluate" class="btn btn-primary">Evaluate</button>
+            <button id="selectArgument" class="pull-right btn btn-primary">Solve for Argument</button>
             <h4 id="problem"></h4>
+            <label for="answer">x = </label>
             <input id="answer" type="number">
+          <table style="display: none" id="argTable"><tbody><tr><td style="border-bottom:solid 2px">1</td></tr><tr><td><input id="argAnswer" type="number"></td></tr></tbody></table>
             <button class="btn btn-primary" id="submit">Submit</button>
             <h3 id="status"></h3>
             <h3 id="streak">Streak: 0</h3>
