@@ -53,6 +53,7 @@ function generateProbswer() {
       } else {
         $('#argTable').hide();
         $('#answer').show();
+        $('#answer').focus();
       }
     }
 
