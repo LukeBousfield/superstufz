@@ -17,7 +17,7 @@
   },
   {
     "title": "Logarithmz",
-    "description": "The inverse of power (NOTE: In Beta)",
+    "description": "The inverse of power",
     "mobileFriendly": true,
     "ageRating": 0,
     "img": "http://superstufz.com/games/logarithmz/img/logarithmz-logo.svg",
@@ -30,5 +30,13 @@
     "ageRating": 0,
     "img": "http://superstufz.com/games/collatzconjecture/collatztree.jpg",
     "id": "collatzconjecture"
+  },
+  {
+    "title": "Car Chase",
+    "description": "To play car chase, all you need to do is control the car with the WASD keys or arrow keys. Try not to die and reset stay alive as long as possible.  To restart, press the \"r\" key on your keyboard.",
+    "mobileFriendly": false,
+    "ageRating": 0,
+    "img": "http://superstufz.com/img/carchase.png",
+    "id": "carchase"
   }
 ]
