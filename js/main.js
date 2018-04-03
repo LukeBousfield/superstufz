@@ -5,7 +5,7 @@ if (age === null) {
     // Ask for age
 }
 
-$.getJSON('http://superstufz.com/data/games.json', onGet);
+$.getJSON('https://codingpower472.github.io/superstufz/data/games.json', onGet);
 
 function onGet(res) {
     stufz = res;
