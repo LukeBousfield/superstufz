@@ -4,7 +4,7 @@
     "description": "Cross your Ts, dot your Is, and factor your Zs",
     "mobileFriendly": true,
     "ageRating": 0,
-    "img": "http://superstufz.com/games/factorialz/img/factorialzlogo.svg",
+    "img": "https://codingpower472.github.io/superstufz/games/factorialz/img/factorialzlogo.svg",
     "id": "factorialz"
   },
   {
@@ -12,7 +12,7 @@
     "description": "Now we're talking power (NOTE: In Beta)",
     "mobileFriendly": true,
     "ageRating": 0,
-    "img": "http://superstufz.com/games/exponentialz/img/exponentialzlogo.svg",
+    "img": "https://codingpower472.github.io/superstufz/games/exponentialz/img/exponentialzlogo.svg",
     "id": "exponentialz"
   },
   {
@@ -20,7 +20,7 @@
     "description": "The inverse of power",
     "mobileFriendly": true,
     "ageRating": 0,
-    "img": "http://superstufz.com/games/logarithmz/img/logarithmz-logo.svg",
+    "img": "https://codingpower472.github.io/superstufz/games/logarithmz/img/logarithmz-logo.svg",
     "id": "logarithmz"
   },
   {
@@ -28,7 +28,7 @@
     "description": "How many steps does it take to 1?  Find out with this handy calculator!",
     "mobileFriendly": true,
     "ageRating": 0,
-    "img": "http://superstufz.com/games/collatzconjecture/collatztree.jpg",
+    "img": "https://codingpower472.github.io/superstufz/collatzconjecture/collatztree.jpg",
     "id": "collatzconjecture"
   },
   {
@@ -36,7 +36,7 @@
     "description": "To play car chase, all you need to do is control the car with the WASD keys or arrow keys. Try not to die and reset stay alive as long as possible.  To restart, press the \"r\" key on your keyboard.",
     "mobileFriendly": false,
     "ageRating": 0,
-    "img": "http://superstufz.com/img/carchase.png",
+    "img": "https://codingpower472.github.io/superstufz/img/carchase.png",
     "id": "carchase"
   }
 ]
