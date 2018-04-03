@@ -30,7 +30,7 @@ function pushStufz() {
 
 function showGame(opts) {
     console.log(opts);
-    var url = "https://superstufz.com/games/" + opts.id;
+    var url = "https://codingpower472.github.io/superstufz/games" + opts.id;
     $('#games').append('<div class="panel panel-body" id="' + opts.id + '">');
     var gameElem = $('#' + opts.id);
     console.log(gameElem);
